@@ -28,6 +28,11 @@ public class Lugar {
 
 
     }
+    public Lugar(){
+        this.fecha = System.currentTimeMillis();
+        this.posicion = new GeoPunto(0,0);
+        this.tipo = TipoLugar.OTROS;
+    }
 
     public String getNombre() {
         return nombre;
